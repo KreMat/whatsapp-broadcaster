@@ -33,8 +33,6 @@
 			$filename = $_FILES['image']['name'];
 			$filename = strtolower($filename);
 			move_uploaded_file($_FILES['image']['tmp_name'], $dir."/".$filename);
-		 
-			//echo '<img src="'.$dir.'/'.$filename.'"/>';
 			
 			$result = $w->sendBroadcastImage($targetArray, $dir.'/'.$filename, false, 0, "", $message);
 			if(isset($result)){

@@ -10,6 +10,7 @@
 	$username = $_SESSION['wa_number'];
 	$password = $_SESSION['wa_key'];
 
+	//https://github.com/mgp25/Chat-API/wiki/WhatsAPI-Documentation
 	require __DIR__ . '/vendor/autoload.php';
 
 	if(isset($_POST['broadcastTargets']) && isset($_POST['message']) ){
